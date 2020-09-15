@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryfx.ReturnBookController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="754.0">
+         <children>
+            <AnchorPane prefHeight="21.0" prefWidth="784.0" style="-fx-background-color: #1e2d47;" />
+            <AnchorPane layoutY="21.0" prefHeight="438.0" prefWidth="371.0" style="-fx-background-color: #dce6e5;">
+               <children>
+                  <TextField fx:id="btitleTxt" layoutX="109.0" layoutY="110.0" prefHeight="25.0" prefWidth="216.0" />
+                  <TextField fx:id="searchBookCode" layoutX="109.0" layoutY="29.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter book code" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 1px 0px;" />
+                  <TextField fx:id="bpriceTxt" layoutX="109.0" layoutY="157.0" prefHeight="25.0" prefWidth="216.0" />
+                  <TextField fx:id="bcategoryTxt" layoutX="109.0" layoutY="204.0" prefHeight="25.0" prefWidth="216.0" />
+                  <TextField fx:id="bpublisherTxt" layoutX="109.0" layoutY="248.0" prefHeight="25.0" prefWidth="216.0" />
+                  <TextField fx:id="beditionTxt" layoutX="109.0" layoutY="297.0" prefHeight="25.0" prefWidth="216.0" />
+                  <Label layoutX="24.0" layoutY="113.0" prefHeight="19.0" prefWidth="28.0" text="Title">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="32.0" text="Enter code">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="160.0" text="Price">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="207.0" text="Category">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="251.0" text="Publisher">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="300.0" text="Edition">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="msgLabel" layoutX="109.0" layoutY="336.0" prefHeight="17.0" prefWidth="187.0" textFill="#b96909" />
+                  <Button fx:id="clearBtn" layoutX="248.0" layoutY="378.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #bfbfc7;" text="Reset" />
+                  <Button fx:id="backBtn" layoutX="12.0" layoutY="371.0" mnemonicParsing="false" onAction="#backto" style="-fx-background-color: TRANSPARENT;" text="Go Back">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="ANGLE_DOUBLE_LEFT" size="2.5em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="417.0" layoutY="52.0" text="Enter ID">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchStudentID" layoutX="499.0" layoutY="49.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter student ID" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 1px 0px;" />
+            <Button fx:id="searchStudentBtn" layoutX="704.0" layoutY="49.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="Search">
+               <graphic>
+                  <FontAwesomeIcon fill="#282424" glyphName="SEARCH" size="1.4em" wrappingWidth="20.59999942779541" />
+               </graphic>
+            </Button>
+            <TextField fx:id="stNameTxt" layoutX="518.0" layoutY="103.0" prefHeight="25.0" prefWidth="216.0" />
+            <TextField fx:id="stYearTxt" layoutX="518.0" layoutY="143.0" prefHeight="25.0" prefWidth="216.0" />
+            <TextField fx:id="stMajorTxt" layoutX="518.0" layoutY="184.0" prefHeight="25.0" prefWidth="216.0" />
+            <TextField fx:id="stDepartmentTxt" layoutX="518.0" layoutY="228.0" prefHeight="25.0" prefWidth="216.0" />
+            <TextField fx:id="stEmailTxt" layoutX="518.0" layoutY="272.0" prefHeight="25.0" prefWidth="216.0" />
+            <Label layoutX="413.0" layoutY="106.0" text="Name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="413.0" layoutY="146.0" prefHeight="19.0" prefWidth="28.0" text="Year">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="414.0" layoutY="187.0" text="Major">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="412.0" layoutY="231.0" text="Department">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="412.0" layoutY="275.0" text="Email">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="413.0" layoutY="318.0" text="Date issued">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnBookBtn" layoutX="518.0" layoutY="406.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="29.0" prefWidth="155.0" style="-fx-background-color: #91460c; -fx-background-radius: 7;" text="RETURN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="returnDate" layoutX="518.0" layoutY="354.0" prefHeight="25.0" prefWidth="216.0" />
+            <Label layoutX="413.0" layoutY="357.0" text="Date returned">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="issueDateTxt" layoutX="518.0" layoutY="315.0" prefHeight="25.0" prefWidth="216.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
